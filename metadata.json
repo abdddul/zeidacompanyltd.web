@@ -1,0 +1,6 @@
+{
+  "name": "ZEIDA",
+  "description": "Premium agricultural enterprise specializing in large-scale livestock farming and organic animal feed production based in Dar es Salaam, Tanzania.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
