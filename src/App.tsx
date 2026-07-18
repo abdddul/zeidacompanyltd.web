@@ -27,7 +27,8 @@ import {
   ShoppingCart,
   Star,
   Quote,
-  Calculator
+  Calculator,
+  Globe
 } from "lucide-react";
 import { type ProductItem, type InsightBlock, type ContactState } from "./types";
 import ArticleDetail from "./components/ArticleDetail";
@@ -39,7 +40,7 @@ import zeidaChickensImg from "./assets/images/zeida_chickens_1781132497900.png";
 import zeidaGrazingGoatsHeroImg from "./assets/images/zeida_grazing_goats_dar_1781449953884.jpg";
 import zeidaChickenHeroCleanImg from "./assets/images/zeida_chicken_hero_clean_1781450726453.jpg";
 import img4halo from "./IMG4halo.JPEG";
-import zeidaLogoImg from "./Zeida logo.PNG";
+import zeidaLogoImg from "./Zeida logo crop fit.png";
 
 // ==========================================
 // DATA DEFINITIONS & ASSETS
@@ -1158,7 +1159,7 @@ export default function App() {
           1. NAVIGATION BAR
           ========================================== */}
       <nav 
-        id="navbar"
+        id="navbar" 
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 bg-transparent ${
           isScrolled 
             ? "py-4" 
@@ -1175,7 +1176,7 @@ export default function App() {
             <img 
               src={zeidaLogoImg} 
               alt="ZEIDA Logo" 
-              className="h-12 md:h-16 w-auto object-contain"
+              className="h-9 md:h-12 w-auto object-contain"
               referrerPolicy="no-referrer"
             />
           </button>
@@ -1211,13 +1212,15 @@ export default function App() {
             {/* Language Toggle */}
             <button
               onClick={() => setLang(lang === "en" ? "sw" : "en")}
-              className={`px-4 py-1.5 text-[10px] tracking-widest font-mono font-semibold rounded-full border transition-all duration-300 cursor-pointer ${
+              className={`px-3 py-1 text-xs font-sans font-semibold rounded-full border-2 flex items-center gap-1.5 transition-all duration-300 cursor-pointer ${
                 isScrolled
-                  ? "border-[#1A3D2B]/15 bg-[#F7F5F0]/80 text-[#1A3D2B] hover:border-[#1A3D2B]/40 hover:bg-[#FFFFFF]"
-                  : "border-white/20 bg-black/25 backdrop-blur-xs text-white hover:border-white/40 hover:bg-white/10"
+                  ? "border-[#1A3D2B] text-[#1A3D2B] hover:bg-[#1A3D2B]/5 bg-transparent"
+                  : "border-white text-white hover:bg-white/10 bg-black/10"
               }`}
             >
-              {lang === "en" ? "ENG" : "SW"}
+              <Globe className="w-3.5 h-3.5 shrink-0" />
+              <span className="font-sans font-semibold text-xs tracking-wide">{lang === "en" ? "Eng" : "Swh"}</span>
+              <ChevronRight className="w-3 h-3 shrink-0" />
             </button>
           </div>
 
@@ -1317,47 +1320,45 @@ export default function App() {
 
         {/* Hero content exactly modeled on the screenshot layout */}
         <div 
-          className="relative z-10 w-full max-w-[1300px] mx-auto px-6 md:px-12 pt-20 pb-36 flex flex-col justify-between"
+          className="relative z-10 w-full max-w-[1300px] mx-auto px-6 md:px-12 pt-20 pb-20 flex flex-col justify-between"
           style={{ height: "555.6px" }}
         >
           
           <div className="flex-1 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 w-full items-stretch mt-8 md:mt-16">
             
             {/* Left section: Bold minimalist farm product title aligned right under the navbar */}
-            <div className="lg:col-span-7 xl:col-span-8 flex flex-col justify-start items-start pt-2 md:pt-4 md:-mt-4 gap-4">
+            <div className="lg:col-span-7 xl:col-span-8 flex flex-col justify-start items-start pt-10 md:pt-16 gap-4">
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1.0, ease: "easeOut" }}
-                className="max-w-[720px] text-left"
+                transition={{ duration: 0.8, ease: "easeOut" }}
+                className="w-full text-left"
               >
                 <h1 className="font-serif tracking-normal leading-[1.1] md:leading-[1.15] text-white drop-shadow-lg"
                     style={{ fontSize: "clamp(2.25rem, 5.5vw, 3.25rem)" }}>
                   {lang === "en" ? (
                     <>
-                      Fresh farm products – <br className="hidden md:inline" />
+                      Fresh farm products <br className="hidden md:inline" />
                       delivered on time, under full <br className="hidden md:inline" />
                       bio-security control
                     </>
                   ) : (
                     <>
-                      Bidhaa safi za shambani – <br className="hidden md:inline" />
+                      Bidhaa safi za shambani <br className="hidden md:inline" />
                       zinafika kwa wakati, chini ya <br className="hidden md:inline" />
                       udhibiti thabiti wa usalama
                     </>
                   )}
                 </h1>
-
-
               </motion.div>
             </div>
 
             {/* Right section: Glassmorphic Floating Panel aligned elegantly to the bottom */}
-            <div className="lg:col-span-5 xl:col-span-4 flex flex-col justify-end items-start lg:items-end pb-24 md:pb-36">
+            <div className="lg:col-span-5 xl:col-span-4 flex flex-col justify-end items-start lg:items-end pb-12 md:pb-16">
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1.0, delay: 0.3, ease: "easeOut" }}
+                transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
                 className="w-full max-w-[390px] text-left flex flex-col gap-6"
               >
                 <p className="text-white text-sm md:text-[15px] font-sans font-light leading-relaxed">
@@ -1367,10 +1368,10 @@ export default function App() {
                 </p>
 
                 <button 
-                  onClick={() => scrollTo("inquire")}
+                  onClick={() => scrollTo("what-we-do")}
                   className="bg-white hover:bg-neutral-100 text-[#000000] px-5 py-3 rounded-full font-sans text-xs font-semibold tracking-wider flex items-center justify-between cursor-pointer group transition-all duration-300 w-full"
                 >
-                  <span className="uppercase tracking-wider">{lang === "en" ? "Book Delivery" : "Agiza Sasa"}</span>
+                  <span className="uppercase tracking-wider">{lang === "en" ? "Order Now" : "Agiza Sasa"}</span>
                   <div className="w-7 h-7 rounded-full bg-black flex items-center justify-center text-white font-bold text-xs group-hover:translate-x-1 transition-transform duration-300">
                     <ArrowRight className="w-3.5 h-3.5" />
                   </div>
@@ -1382,19 +1383,7 @@ export default function App() {
 
         </div>
 
-        {/* Scroll Indicator */}
-        <div 
-          className="absolute bottom-4 left-1/2 -translate-x-1/2 flex flex-col items-center cursor-pointer group z-10" 
-          onClick={() => scrollTo("about")}
-        >
-          <motion.div 
-            animate={{ y: [0, 4, 0] }}
-            transition={{ repeat: Infinity, duration: 2.2, ease: "easeInOut" }}
-            className="w-5 h-8 border border-white/30 rounded-full flex items-start justify-center p-1.5 backdrop-blur-xs"
-          >
-            <div className="w-1.5 h-1.5 bg-white rounded-full"></div>
-          </motion.div>
-        </div>
+
       </header>
 
 
@@ -1452,24 +1441,32 @@ export default function App() {
           </div>
 
           {/* Bottom Row: Explanatory quality standard statement */}
-          <div className="mt-16 md:mt-24 max-w-[850px] text-left">
-            <p className="font-sans text-[15px] md:text-[17px] text-[#3B4F43] font-light leading-relaxed md:leading-loose tracking-normal whitespace-pre-line">
-              {lang === "en" ? (
-                `We deliver healthy, high-quality animals. We specialize in poultry, goats, sheep, and other farm animals raised under careful, controlled conditions.
-Our goal is to ensure every animal meets strong health and quality standards before reaching our customers.
-
-We are committed to proper feeding, hygiene, and responsible animal care throughout the growth process.
-This allows us to supply reliable livestock for both individual and commercial needs consistently.
-Our mission is to make quality farm animals easily accessible directly from the source.`
-              ) : (
-                `Tunasambaza wanyama wenye afya na ubora wa hali ya juu. Tumeobobea katika kuku na bata, mbuzi, kondoo, na wanyama wengine wa shambani wanaofugwa katika mazingira salama na yenye uangalizi wa kina.
-Lengo letu ni kuhakikisha kila mnyama anafikia viwango vya juu vya afya na ubora kabla ya kuwafikia wateja wetu.
-
-Tumejitolea kuhakikisha lishe bora, usafi, na utunzaji wa kuwajibika wa wanyama katika kipindi chote cha ukuaji.
-Hii inatuwezesha kusambaza mifugo ya kuaminika kwa mahitaji ya mtu mmoja mmoja na ya kibiashara mara kwa mara.
-Dhamira yetu ni kufanya wanyama wa shambani wenye ubora kupatikana kwa urahisi kutoka chanzo cha kuaminika.`
-              )}
-            </p>
+          <div className="mt-16 md:mt-24 max-w-[850px] text-left space-y-6 md:space-y-8">
+            {lang === "en" ? (
+              <>
+                <p className="font-sans text-[15px] md:text-[17px] text-[#3B4F43] font-light leading-relaxed md:leading-loose tracking-normal text-pretty">
+                  We deliver healthy, high-quality animals. We specialize in poultry, goats, sheep, and other farm animals raised under careful, controlled conditions. Our goal is to ensure every animal meets strong health and quality standards before reaching our{"\u00a0"}customers.
+                </p>
+                <p className="font-sans text-[15px] md:text-[17px] text-[#3B4F43] font-light leading-relaxed md:leading-loose tracking-normal text-pretty">
+                  We are committed to proper feeding, hygiene, and responsible animal care throughout the growth process. This allows us to supply reliable livestock for both individual and commercial needs{"\u00a0"}consistently.
+                </p>
+                <p className="font-sans text-[15px] md:text-[17px] text-[#3B4F43] font-light leading-relaxed md:leading-loose tracking-normal text-pretty">
+                  Our mission is to make quality farm animals easily accessible directly from the{"\u00a0"}source.
+                </p>
+              </>
+            ) : (
+              <>
+                <p className="font-sans text-[15px] md:text-[17px] text-[#3B4F43] font-light leading-relaxed md:leading-loose tracking-normal text-pretty">
+                  Tunasambaza wanyama wenye afya na ubora wa hali ya juu. Tumeobobea katika kuku na bata, mbuzi, kondoo, na wanyama wengine wa shambani wanaofugwa katika mazingira salama na yenye uangalizi wa kina. Lengo letu ni kuhakikisha kila mnyama anafikia viwango vya juu vya afya na ubora kabla ya kuwafikia wateja{"\u00a0"}wetu.
+                </p>
+                <p className="font-sans text-[15px] md:text-[17px] text-[#3B4F43] font-light leading-relaxed md:leading-loose tracking-normal text-pretty">
+                  Tumejitolea kuhakikisha lishe bora, usafi, na utunzaji wa kuwajibika wa wanyama katika kipindi chote cha ukuaji. Hii inatuwezesha kusambaza mifugo ya kuaminika kwa mahitaji ya mtu mmoja mmoja na ya kibiashara mara{"\u00a0"}kwa{"\u00a0"}mara.
+                </p>
+                <p className="font-sans text-[15px] md:text-[17px] text-[#3B4F43] font-light leading-relaxed md:leading-loose tracking-normal text-pretty">
+                  Dhamira yetu ni kufanya wanyama wa shambani wenye ubora kupatikana kwa urahisi kutoka chanzo cha{"\u00a0"}kuaminika.
+                </p>
+              </>
+            )}
           </div>
 
         </div>
@@ -2333,7 +2330,12 @@ Dhamira yetu ni kufanya wanyama wa shambani wenye ubora kupatikana kwa urahisi k
             </div>
 
             {/* Center Col: Lowcase Navigation Links */}
-            <div className="md:col-span-3 flex flex-col md:items-center justify-center py-4">
+            <div className="md:col-span-3 flex flex-col md:items-center space-y-6">
+              <div className="text-left md:text-center w-full">
+                <h4 className="font-sans text-[11px] tracking-[0.2em] text-[#C4A66B] uppercase font-bold">
+                  {lang === "en" ? "Navigation" : "Urambazaji"}
+                </h4>
+              </div>
               <div className="flex flex-col space-y-4 items-start md:items-center text-xs font-sans tracking-[0.2em] text-white/60 lowercase">
                 <button onClick={() => scrollTo("about")} className="hover:text-white transition-colors cursor-pointer lowercase font-light">
                   {lang === "en" ? "about us" : "kuhusu sisi"}
