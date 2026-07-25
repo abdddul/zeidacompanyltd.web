@@ -32,6 +32,9 @@ import {
 } from "lucide-react";
 import { type ProductItem, type InsightBlock, type ContactState } from "./types";
 import ArticleDetail from "./components/ArticleDetail";
+import PrivacyPolicy from "./components/PrivacyPolicy";
+import TermsAndConditions from "./components/TermsAndConditions";
+import CookieNotice from "./components/CookieNotice";
 import zeidaHeroFarmImg from "./assets/images/zeida_hero_farm_1781132476746.png";
 import aboutUsChickensImg from "./about us chickens.jpg";
 import geeseImg from "./geese.jpg";
@@ -901,6 +904,8 @@ const T = {
 export default function App() {
   const [lang, setLang] = useState<"en" | "sw">("en");
   const [selectedArticle, setSelectedArticle] = useState<string | null>(null);
+  const [isPrivacyOpen, setIsPrivacyOpen] = useState(false);
+  const [isTermsOpen, setIsTermsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isNavbarVisible, setIsNavbarVisible] = useState(true);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -1181,6 +1186,9 @@ export default function App() {
               src={zeidaLogoImg} 
               alt="ZEIDA Logo" 
               className="h-9 md:h-12 w-auto object-contain"
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
               referrerPolicy="no-referrer"
             />
           </button>
@@ -1323,6 +1331,9 @@ export default function App() {
             alt="ZEIDA Organic Farming - Premium Chickens" 
             className="w-full h-full object-cover brightness-[1.02] contrast-[1.01]"
             style={{ objectPosition: "50% 25%" }}
+            loading="eager"
+            fetchPriority="high"
+            decoding="async"
             referrerPolicy="no-referrer"
           />
           {/* Subtle vignette/gradient to ensure supreme readability on all viewports */}
@@ -1446,6 +1457,8 @@ export default function App() {
                 src={geeseImg} 
                 alt={lang === "en" ? "Zeida lush pastures" : "Malisho mabichi ya Zeida"} 
                 className="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-[1.04]"
+                loading="lazy"
+                decoding="async"
                 referrerPolicy="no-referrer"
               />
             </div>
@@ -2217,6 +2230,8 @@ export default function App() {
                 src={chickenVillageBgImg} 
                 alt="Chicken farm landscape" 
                 className="w-full h-full object-cover opacity-40 brightness-105 saturate-110"
+                loading="lazy"
+                decoding="async"
                 referrerPolicy="no-referrer"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-white/85 via-white/70 to-white/85" />
@@ -2419,7 +2434,21 @@ export default function App() {
           {/* Bottom Row: Sub footer divider & copyright */}
           <div className="pt-8 border-t border-[#3B4F43]/20 text-center">
             <p className="text-[11px] font-sans text-white/40 tracking-wider">
-              Copyright &copy; {new Date().getFullYear()} ZEIDA. All Rights Reserved. | Privacy Policy | Designed by{" "}
+              Copyright &copy; {new Date().getFullYear()} ZEIDA. All Rights Reserved. |{" "}
+              <button 
+                type="button" 
+                onClick={() => setIsPrivacyOpen(true)} 
+                className="underline text-white/60 hover:text-[#C4A66B] transition-all duration-300 cursor-pointer font-medium inline-block"
+              >
+                Privacy Policy
+              </button>{" "}|{" "}
+              <button 
+                type="button" 
+                onClick={() => setIsTermsOpen(true)} 
+                className="underline text-white/60 hover:text-[#C4A66B] transition-all duration-300 cursor-pointer font-medium inline-block"
+              >
+                Terms &amp; Conditions
+              </button>{" "}| Designed by{" "}
               <a 
                 href="https://www.linkedin.com/in/abdul-shomari-172313358" 
                 target="_blank" 
@@ -2433,6 +2462,11 @@ export default function App() {
 
         </div>
       </footer>
+
+      {/* Legal Modals & Cookie Notice */}
+      <PrivacyPolicy isOpen={isPrivacyOpen} onClose={() => setIsPrivacyOpen(false)} lang={lang} />
+      <TermsAndConditions isOpen={isTermsOpen} onClose={() => setIsTermsOpen(false)} lang={lang} />
+      <CookieNotice lang={lang} onOpenPrivacy={() => setIsPrivacyOpen(true)} />
 
     </div>
   );
