@@ -1339,6 +1339,8 @@ export default function App() {
           {/* Subtle vignette/gradient to ensure supreme readability on all viewports */}
           <div className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-black/55 via-black/15 to-transparent z-0 pointer-events-none" />
           <div className="absolute inset-x-0 top-0 h-1/3 bg-gradient-to-b from-black/25 via-transparent to-transparent z-0 pointer-events-none" />
+          {/* Premium transition gradient blending hero into the next section (#FAF8F5) */}
+          <div className="absolute inset-x-0 bottom-0 h-28 md:h-40 bg-gradient-to-t from-[#FAF8F5] via-[#FAF8F5]/60 to-transparent z-[1] pointer-events-none" />
         </div>
 
         {/* Hero content exactly modeled on the screenshot layout */}
@@ -1415,7 +1417,7 @@ export default function App() {
           ========================================== */}
       <section 
         id="about" 
-        className="relative bg-[#FAF8F5] py-20 md:py-32 px-6 md:px-12 lg:px-20 overflow-hidden border-t border-[#3B4F43]/5"
+        className="relative bg-[#FAF8F5] py-20 md:py-32 px-6 md:px-12 lg:px-20 overflow-hidden"
       >
         <div className="max-w-[1100px] mx-auto">
           
@@ -1532,7 +1534,7 @@ export default function App() {
           </div>
 
           {/* Symmetrical Category Filter Tabs (Snapping layout) */}
-          <div className="flex flex-wrap gap-2.5 md:gap-3 justify-start mb-12 border-b border-[#3B4F43]/10 pb-6">
+          <div className="flex flex-wrap gap-2.5 md:gap-3 justify-start mb-12">
             {[
               { key: "All", en: "All Products", sw: "Bidhaa Zote" },
               { key: "poultry", en: "Chicken & Duck", sw: "Kuku & Bata" },
@@ -2185,7 +2187,7 @@ export default function App() {
             {INSIGHTS.map((insight) => (
               <div 
                 key={insight.id} 
-                className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 pt-8 md:pt-12 border-t border-[#3B4F43]/10 items-start"
+                className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 pt-8 md:pt-12 items-start"
               >
                 
                 {/* Large index */}
