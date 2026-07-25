@@ -683,11 +683,11 @@ const T = {
     navAbout: "About us",
     navWhatWeDo: "Our Products",
     navKnowledge: "Knowledge & Insight",
-    navInquire: "Inquire",
+    navContact: "Contacts",
     navAboutFull: "About us",
     navSpecsFull: "Our Products",
     navEditorialFull: "Knowledge & Insight",
-    navContactFull: "Inquire",
+    navContactFull: "Contacts",
 
     // Hero section
     heroTag: "DAR ES SALAAM, TANZANIA",
@@ -792,11 +792,11 @@ const T = {
     navAbout: "Kuhusu sisi",
     navWhatWeDo: "Bidhaa zetu",
     navKnowledge: "Maarifa na Maoni",
-    navInquire: "Ulizia",
+    navContact: "Mawasiliano",
     navAboutFull: "Kuhusu sisi",
     navSpecsFull: "Bidhaa zetu",
     navEditorialFull: "Maarifa na Maoni",
-    navContactFull: "Wasiliana nasi",
+    navContactFull: "Mawasiliano",
 
     // Hero section
     heroTag: "DAR ES SALAAM, TANZANIA",
@@ -1212,8 +1212,14 @@ export default function App() {
               {t.navKnowledge}
             </button>
 
-
-            {/* Language Toggle */}
+            <button 
+              onClick={() => scrollTo("footer")} 
+              className={`font-sans text-xs tracking-[0.12em] font-semibold gold-sweep py-1 cursor-pointer transition-colors duration-200 ${
+                isScrolled ? "text-[#1A3D2B] hover:text-[#C4A66B]" : "text-white hover:text-[#C4A66B]"
+              }`}
+            >
+              {t.navContact}
+            </button>            {/* Language Toggle */}
             <button
               onClick={() => setLang(lang === "en" ? "sw" : "en")}
               className={`px-3 py-1 text-xs font-sans font-semibold rounded-full border-2 flex items-center gap-1.5 transition-all duration-300 cursor-pointer ${
@@ -1398,7 +1404,7 @@ export default function App() {
           ========================================== */}
       <section 
         id="about" 
-        className="relative bg-[#FAF8F5] py-20 md:py-32 px-6 md:px-12 lg:px-20 overflow-hidden border-t border-b border-[#3B4F43]/5"
+        className="relative bg-[#FAF8F5] py-20 md:py-32 px-6 md:px-12 lg:px-20 overflow-hidden border-t border-[#3B4F43]/5"
       >
         <div className="max-w-[1100px] mx-auto">
           
@@ -1484,7 +1490,7 @@ export default function App() {
           ========================================== */}
       <section 
         id="what-we-do" 
-        className="relative bg-[#FAF8F5] py-24 md:py-32 px-6 overflow-hidden border-t border-b border-[#3B4F43]/5"
+        className="relative bg-[#FAF8F5] py-24 md:py-32 px-6 overflow-hidden"
       >
         {/* Soft, natural blurred ambient vector glows in corners */}
         <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#1A3D2B]/3 rounded-full blur-[120px] pointer-events-none select-none" />
@@ -2141,9 +2147,13 @@ export default function App() {
           ========================================== */}
       <section 
         id="insights" 
-        className="relative bg-[#FFFFFF] py-24 md:py-32 px-6 overflow-hidden"
+        className="relative bg-[#FAF8F5] py-24 md:py-32 px-6 overflow-hidden"
       >
-        <div className="max-w-[1200px] mx-auto">
+        {/* Soft, natural blurred ambient vector glows matching what-we-do for seamless background continuity */}
+        <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-[#1A3D2B]/3 rounded-full blur-[120px] pointer-events-none select-none" />
+        <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-[#C4A66B]/3 rounded-full blur-[140px] pointer-events-none select-none" />
+
+        <div className="max-w-[1200px] mx-auto relative z-10">
           
 
 
