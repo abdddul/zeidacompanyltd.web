@@ -32,10 +32,33 @@ html {
   font-family: var(--font-sans);
   background-color: var(--color-primary-bg);
   color: var(--color-body);
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
   overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Fix mobile WebKit GPU tile layer eviction / disappearing content on scroll */
+section, header, footer {
+  isolation: isolate;
+  contain: layout style;
+}
+
+/* Prevent image flickering and GPU layer drops during inertia scrolling on iOS & Android */
+img {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* Reduce GPU raster memory footprint on mobile devices to prevent layer drops */
+@media (max-width: 768px) {
+  .blur-\[120px\],
+  .blur-\[130px\],
+  .blur-\[140px\] {
+    filter: blur(32px) !important;
+  }
 }
 
 /* Custom fade up transition classes */
