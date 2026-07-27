@@ -145,21 +145,21 @@ const INSIGHTS_EN: InsightBlock[] = [
     number: "01",
     title: "Organic Feed Formulation",
     subtitle: "The Science of Biological Vitality",
-    content: "At ZEIDA, we do not outsource nutrition. We grow our own maize, vegetables, and select crops on-site. By formulating our feed organically, we guarantee that our chickens and livestock ingest precise amino acid structures without chemical interventions. This rigorous approach optimizes cell growth naturally and results in healthier, leaner, and safer products from our farm to your table."
+    content: "At ZEIDA, we do not outsource nutrition. We grow our own maize, vegetables, and select crops on-site. Formulated by Rajab J Koya (Feeds & Animal Nutrition Specialist), we guarantee that our chickens and livestock ingest precise amino acid structures without chemical interventions. This rigorous approach optimizes cell growth naturally and results in healthier, leaner, and safer products from our farm to your table."
   },
   {
     id: "insight-2",
     number: "02",
-    title: "Integrated Value Chain",
-    subtitle: "A Closed-Loop Agricultural Philosophy",
-    content: "Modern trading requires continuous reliability. Our system connects every phase: crop cultivation, feed production, controlled livestock breeding, and managed retail-ready packaging. By monitoring each touchpoint, we completely eliminate supply-chain gaps and minimize operational losses, assuring institutional partners constant year-round availability."
+    title: "Integrated Delivery Architecture",
+    subtitle: "A Closed-Loop Agricultural & Delivery Philosophy",
+    content: "Modern trading requires continuous reliability. Overseen by Abdul Mohamed Shomari (Operations & Finance Manager) alongside Habibu A Mbiduka (Sales & Delivery Lead), our system connects every phase: crop cultivation, feed production, controlled livestock breeding, chicks production (managed by Habibu Abdul Mbiduka), and direct delivery. Backed by sales officers Ellis and Ramadhani Hassan, we eliminate delivery gaps and assure institutional partners constant availability."
   },
   {
     id: "insight-3",
     number: "03",
-    title: "Controlled Sustainable Farming",
+    title: "Controlled Sustainable Farming & Herd Health",
     subtitle: "Ecosystem Balance in Coastal Tanzania",
-    content: "Dar es Salaam's climate requires deep respect for resources. Our Kisarawe II facilities utilize advanced pasture rotations, natural bio-composting, and eco-designed poultry shelters. This controlled environment safeguards our herds against environmental stress while strictly preserving the surrounding water tables and indigenous coastal vegetation."
+    content: "Dar es Salaam's climate requires deep respect for resources. Under the leadership of Hashimu Chande Abdallah (CEO), Salum Habibu (Head of Direct Farm Operations), and Dr. Ally (Doctor of the Farm), our Kisarawe II facilities utilize advanced pasture rotations, natural bio-composting, and clinical veterinary care to safeguard our herds against environmental stress while strictly preserving coastal ecosystems."
   }
 ];
 
@@ -169,21 +169,21 @@ const INSIGHTS_SW: InsightBlock[] = [
     number: "01",
     title: "Uundaji wa Chakula Asili",
     subtitle: "Sayansi ya Ustawi wa Kibiolojia",
-    content: "Hapa ZEIDA, hatununui chakula cha mifugo kutoka nje. Tunalima mahindi yetu wenyewe, mboga mboga, na mazao maalumu kwenye shamba letu. Kwa kuandaa lishe hii asilia wenyewe, tunahakikisha kuku na mifugo yetu wanapata mchanganyiko sahihi vya virutubisho na protini bila kemikali yoyote ya viwandani. Hii inasaidia ukuaji bora wa asili na kutoa bidhaa zenye afya na usalama zaidi."
+    content: "Hapa ZEIDA, hatununui chakula cha mifugo kutoka nje. Tunalima mahindi yetu wenyewe, mboga mboga, na mazao maalumu kwenye shamba letu. Ikisimamiwa na Rajab J Koya (Mtaalamu wa Lishe na Vyakula vya Mifugo), tunahakikisha kuku na mifugo yetu wanapata mchanganyiko sahihi wa virutubisho bila kemikali ya viwandani, matokeo yake ni bidhaa zenye afya na usalama zaidi."
   },
   {
     id: "insight-2",
     number: "02",
-    title: "Mlolongo Thabiti wa Thamani",
-    subtitle: "Falsafa ya Kilimo Kilichokamilika",
-    content: "Biashara ya kisasa inahitaji ugavi unaoaminika bila kukatika. Mfumo wetu unaunganisha kila hatua: ukulima wa mazao, uzalishaji wa vyakula, ufugaji makini wa mifugo, na ufungashaji salama kwa ajili ya soko. Kwa kusimamia kila hatua, tunaondoa kabisa mapengo ya usambazaji na kupunguza hasara za kiutendaji, tukihakikishia washirika wetu upatikanaji wa bidhaa mwaka mzima."
+    title: "Mlolongo Thabiti wa Mauzo na Utoaji",
+    subtitle: "Falsafa ya Kilimo na Usambazaji wa Moja kwa Moja",
+    content: "Biashara ya kisasa inahitaji uaminifu bila kukatika. Ikisimamiwa na Abdul Mohamed Shomari (Meneja Operesheni na Fedha) pamoja na Habibu A Mbiduka (Mkuu wa Mauzo na Utoaji), mfumo wetu unaunganisha kila hatua: ukulima, uzalishaji wa vyakula, uzalishaji wa vifaranga (ukiongozwa na Habibu Abdul Mbiduka), na utoaji wa moja kwa moja. Pamoja na maafisa mauzo Ellis na Ramadhani Hassan, tunaondoa mapengo ya usambazaji na kuhakikisha huduma thabiti."
   },
   {
     id: "insight-3",
     number: "03",
-    title: "Kilimo Endelevu Kilichodhibitiwa",
+    title: "Kilimo Endelevu na Afya ya Mifugo",
     subtitle: "Uhifadhi wa Mazingira ya Pwani nchini Tanzania",
-    content: "Hali ya chewa ya Dar es Salaam inahitaji heshima kubwa kwa rasilimali. Miundombinu yetu ya Kisarawe II inatumia mzunguko wa malisho, mbolea za asili (compost), na mabanda yenye muundo unaohifadhi mazingira. Usalama huu unalinda mifugo yetu dhidi ya changamoto za hali ya hewa huku ukihifadhi vyanzo vya maji vya chini ya ardhi na uoto wa asili wa pwani."
+    content: "Hali ya hewa ya Dar es Salaam inahitaji uzoefu na heshima kwa rasilimali. Chini ya uongozi wa Hashimu Chande Abdallah (Mkurugenzi Mkuu - CEO), Salum Habibu (Mkuu wa Operesheni za Shambani), na Dkt. Ally (Daktari wa Shamba), miundombinu yetu ya Kisarawe II inatumia mzunguko wa malisho, mbolea za asili, na uangalizi wa kidaktari ili kulinda mifugo na mazingira ya pwani."
   }
 ];
 
@@ -739,7 +739,7 @@ const T = {
     // Insights section
     insIndicator: "// 03 / EDITORIAL & STUDY",
     insHeading: "Knowledge Sharing: Demystifying Modern Tanzanian Agriculture",
-    insSubtext: "We operate under the philosophy that transparency builds client trust. Below, our agronomists and livestock handlers highlight the core mechanical frameworks that set ZEIDA's operations strictly apart.",
+    insSubtext: "We operate under the philosophy that transparency builds client trust. Below, CEO Hashimu Chande Abdallah, Operations & Finance Manager Abdul Mohamed Shomari, Doctor of the Farm Dr. Ally, Head of Direct Farm Operations Salum Habibu, Feeds Specialist Rajab J Koya, Sales & Delivery Lead Habibu A Mbiduka, Chicks Production Specialist Habibu Abdul Mbiduka, and sales officers Ellis and Ramadhani Hassan highlight the core operational frameworks that set ZEIDA apart.",
     insStandard: "ORGANIC REASSURANCE STANDARD",
     insStandardBody: "All chickens and livestock are raised on a high proportion of organically produced feed, much of which we cultivate ourselves, allowing us to maintain strict quality control and ensure optimal nutrition.",
     insLocation: "REGISTERED FARM LOCATION",
@@ -848,7 +848,7 @@ const T = {
     // Insights section
     insIndicator: "// 03 / MAKALA & MAARIFA",
     insHeading: "Kushiriki Maarifa: Kueleza Kilimo cha Kisasa nchini Tanzania",
-    insSubtext: "Tunaendesha shughuli zetu kwa falsafa kwamba uwazi ndio msingi wa kujenga uaminifu wa wateja. Hapa chini, wataalamu wetu wa kilimo na ufugaji wanaeleza mifumo mikuu inayofanya ZEIDA kuwa ya kipekee.",
+    insSubtext: "Tunaendesha shughuli zetu kwa falsafa kwamba uwazi ndio msingi wa kujenga uaminifu wa wateja. Hapa chini, Mkurugenzi Mkuu (CEO) Hashimu Chande Abdallah, Meneja Operesheni na Fedha Abdul Mohamed Shomari, Daktari wa Shamba Dkt. Ally, Mkuu wa Operesheni za Shambani Salum Habibu, Mtaalamu wa Vyakula Rajab J Koya, Mkuu wa Mauzo na Utoaji Habibu A Mbiduka, Mtaalamu wa Uzalishaji Vifaranga Habibu Abdul Mbiduka, pamoja na maafisa mauzo Ellis na Ramadhani Hassan wanaeleza mifumo mikuu inayofanya ZEIDA kuwa ya kipekee.",
     insStandard: "KIWANGO CHA UHAKIKI WA ASILI",
     insStandardBody: "Kuku na mifugo yote hulishwa asilimia kubwa ya vyakula vya asili tunavyolima sisi wenyewe shambani, ili kutuwezesha kudhibiti kwa karibu ubora na usahihi wa lishe.",
     insLocation: "MAHALI SHAMBA LILIPOSAJILIWA",

@@ -23,7 +23,7 @@ export default function ArticleDetail({ articleId, lang, onBack }: ArticleDetail
           <div className="mb-8">
             <div className="flex items-center gap-2 text-xs font-mono text-[#C4A66B] uppercase tracking-widest mb-3">
               <Leaf className="w-4 h-4" />
-              <span>Category: Agricultural Sciences</span>
+              <span>Category: Agricultural Feed & Nutrition</span>
             </div>
             <h1 className="font-serif text-3xl md:text-5xl font-normal text-[#1D2B22] leading-tight mb-4">
               Organic Feed Formulation: The Science of Biological Vitality
@@ -41,7 +41,7 @@ export default function ArticleDetail({ articleId, lang, onBack }: ArticleDetail
                 <span>Verified Fact-checked</span>
               </div>
               <div>Published: June 2026</div>
-              <div>Author: Dr. J. Mpenda, Agronomic Nutrition Specialist</div>
+              <div>Author: Rajab J Koya, Feeds & Animal Nutrition Specialist</div>
             </div>
           </div>
 
@@ -187,7 +187,7 @@ export default function ArticleDetail({ articleId, lang, onBack }: ArticleDetail
           <div className="mb-8">
             <div className="flex items-center gap-2 text-xs font-mono text-[#C4A66B] uppercase tracking-widest mb-3">
               <Leaf className="w-4 h-4" />
-              <span>Jamii: Sayansi ya Kilimo na Lishe</span>
+              <span>Jamii: Lishe na Vyakula vya Mifugo</span>
             </div>
             <h1 className="font-serif text-3xl md:text-5xl font-normal text-[#1D2B22] leading-tight mb-4">
               Uundaji wa Chakula cha Asili: Sayansi ya Ustawi wa Kibiolojia
@@ -205,7 +205,7 @@ export default function ArticleDetail({ articleId, lang, onBack }: ArticleDetail
                 <span>Ukweli Umethibitishwa</span>
               </div>
               <div>Imechapishwa: Juni 2026</div>
-              <div>Mwandishi: Dkt. J. Mpenda, Mtaalamu wa Lishe ya Kilimo</div>
+              <div>Mwandishi: Rajab J Koya, Mtaalamu wa Lishe na Vyakula vya Mifugo</div>
             </div>
           </div>
 
@@ -354,13 +354,13 @@ export default function ArticleDetail({ articleId, lang, onBack }: ArticleDetail
           <div className="mb-8">
             <div className="flex items-center gap-2 text-xs font-mono text-[#C4A66B] uppercase tracking-widest mb-3">
               <Leaf className="w-4 h-4" />
-              <span>Category: Agricultural Logistics</span>
+              <span>Category: Direct Delivery & Farm Operations</span>
             </div>
             <h1 className="font-serif text-3xl md:text-5xl font-normal text-[#1D2B22] leading-tight mb-4">
-              Integrated Value Chain: A Closed-Loop Supply Chain Architecture
+              Integrated Delivery Architecture: A Closed-Loop Supply & Delivery Philosophy
             </h1>
             <p className="text-lg text-[#3B4F43]/85 font-light leading-relaxed mb-6">
-              Analyzing how vertical integration and zero-waste, farm-to-table logistics stabilize agricultural distribution, reduce resource loss, and guarantee continuous reliability for the Dar es Salaam market.
+              Analyzing how vertical integration, specialized chicks production, and zero-waste farm-to-table delivery stabilize agricultural distribution, reduce resource loss, and guarantee continuous reliability for the Dar es Salaam market.
             </p>
             <div className="flex flex-wrap items-center gap-6 text-xs text-[#7A8C82] font-mono border-y border-[#3B4F43]/10 py-4">
               <div className="flex items-center gap-1.5">
@@ -369,10 +369,10 @@ export default function ArticleDetail({ articleId, lang, onBack }: ArticleDetail
               </div>
               <div className="flex items-center gap-1.5">
                 <Globe className="w-4 h-4 text-[#C4A66B]" />
-                <span>Verified Supply Chain Study</span>
+                <span>Verified Supply & Delivery Study</span>
               </div>
               <div>Published: June 2026</div>
-              <div>Author: Director of Operations, ZEIDA Logistics Dept.</div>
+              <div>Author: Abdul Mohamed Shomari (Operations & Finance Manager) & Habibu A Mbiduka (Head of Sales & Delivery)</div>
             </div>
           </div>
 
@@ -382,7 +382,7 @@ export default function ArticleDetail({ articleId, lang, onBack }: ArticleDetail
             <div className="relative z-10 text-center max-w-lg px-6">
               <span className="text-xs font-mono uppercase tracking-[0.2em] text-[#C4A66B] block mb-2">Process Architecture Flowchart</span>
               <p className="font-serif text-lg text-[#1D2B22] italic">
-                "Soil Preparation → Feed Milling → Controlled Breeding → Precision Processing → Cold Logistics"
+                "Soil Preparation → Organic Feed Milling → Chicks Production → Managed Breeding → Direct Delivery"
               </p>
             </div>
           </div>
@@ -390,35 +390,35 @@ export default function ArticleDetail({ articleId, lang, onBack }: ArticleDetail
           {/* Body Content */}
           <div className="prose prose-neutral max-w-none text-[#3B4F43] font-light text-[15px] md:text-base leading-[1.8] space-y-8">
             <p>
-              One of the greatest challenges in sub-Saharan agriculture is supply volatility. Traditional supply chains are fragmented—one enterprise grows the grain, another mills the feed, a third raises the livestock, and a fourth handles transit. Each layer introduces margin markups, bio-security risks, and transportation delays. At ZEIDA, we solved this by creating a <strong>fully integrated, closed-loop value chain.</strong>
+              One of the greatest challenges in sub-Saharan agriculture is supply volatility. Traditional supply chains are fragmented—one enterprise grows the grain, another mills the feed, a third raises the livestock, and a fourth handles transit. Each layer introduces margin markups, bio-security risks, and transportation delays. At ZEIDA, under the financial and operational direction of <strong>Abdul Mohamed Shomari (Operations & Finance Manager)</strong>, we solved this by creating a <strong>fully integrated, closed-loop delivery chain.</strong>
             </p>
 
             <h2 className="font-serif text-xl md:text-2xl font-semibold text-[#1D2B22] uppercase tracking-wide pt-4 border-b border-[#3B4F43]/10 pb-2">
-              1. The Benefits of Integrated Farming Systems
+              1. The Benefits of Integrated Farming Systems & Specialized Hatching
             </h2>
             <p>
-              An integrated farming system (IFS) operates as a singular, cohesive biological engine. The outputs of one subsystem become the inputs of another:
+              An integrated farming system operates as a singular, cohesive biological engine. The outputs of one subsystem become the inputs of another:
             </p>
             <ul className="list-disc pl-5 space-y-2">
               <li>
-                <strong>Nutrient Re-utilization:</strong> Animal manure from our goats, sheep, and poultry is collected and processed through composting systems. This nitrogen-rich organic compost is returned to our pasturelands and maize crops, eliminating the need for commercial fertilizers.
+                <strong>Specialized Chicks Production:</strong> Overseen directly by <strong>Habibu Abdul Mbiduka (Chicks Production Lead)</strong>, our hatchery unit produces healthy, day-old pullets and meat chicks under clinical bio-security, guaranteeing optimal genetic vigor from day one.
               </li>
               <li>
-                <strong>Cost Protection:</strong> Because we grow our own grain and process our own feed on-site, we are protected against global grain market fluctuations. This allows us to maintain incredibly stable, fair prices for our Tanzanian customers year-round.
+                <strong>Nutrient Re-utilization:</strong> Animal manure from our goats, sheep, and poultry is collected and processed through composting systems. This nitrogen-rich organic compost is returned to our pasturelands and maize crops, eliminating commercial fertilizers.
               </li>
               <li>
-                <strong>Absolute Bio-Security:</strong> Because animals never ingest external feed of unknown origins and our facilities remain closed to third-party traffic, we drastically minimize the risk of pathogen introductions.
+                <strong>Cost Protection & Sales Strategy:</strong> Managed by sales officers <strong>Ellis</strong> and <strong>Ramadhani Hassan</strong>, our direct client engagement keeps market pricing transparent and immune to third-party price speculation.
               </li>
             </ul>
 
             <h2 className="font-serif text-xl md:text-2xl font-semibold text-[#1D2B22] uppercase tracking-wide pt-4 border-b border-[#3B4F43]/10 pb-2">
-              2. How Closed-Loop Supply Chains Prevent Waste
+              2. How Closed-Loop Delivery Prevents Agricultural Waste
             </h2>
             <p>
-              In traditional systems, up to 30% of agricultural products are lost post-harvest due to bad storage or delayed transport. A closed-loop supply chain counters this by matching production directly to active demand metrics:
+              In traditional systems, up to 30% of agricultural products are lost post-harvest due to bad storage or delayed transport. Our direct delivery model counters this by matching production directly to active demand metrics:
             </p>
             <p>
-              At our Kisarawe II facilities, crops are harvested and milled according to precise livestock growth forecasts. Egg collections are graded, sanitized, packed, and loaded directly into our delivery vans within hours of being laid. Livestock processing occurs strictly under strict sanitary parameters based on pre-scheduled wholesale contracts, ensuring zero over-slaughter and minimal inventory holding times.
+              At our Kisarawe II facilities, crops are harvested and milled according to precise livestock growth forecasts. Egg collections are graded, sanitized, packed, and loaded directly into our delivery vans within hours of being laid. Orders placed through our sales channels are fulfilled rapidly under the supervision of <strong>Habibu A Mbiduka (Head of Sales & Delivery)</strong>.
             </p>
 
             <div className="bg-[#FAF8F5] border-l-4 border-[#1A3D2B] p-6 rounded-r-xl my-6">
@@ -427,18 +427,18 @@ export default function ArticleDetail({ articleId, lang, onBack }: ArticleDetail
                 Zero-Waste Efficiency
               </h3>
               <p className="text-xs md:text-sm italic leading-relaxed">
-                "Our logistics data reveals that our integrated model maintains post-harvest loss at under 1.8%, compared to the regional average of 25%. Waste isn't discarded—it is systematically re-routed back into the farming cycle."
+                "Our operational delivery data reveals that our integrated model maintains post-harvest loss at under 1.8%, compared to the regional average of 25%. We do not run third-party logistics—we handle direct, reliable farm delivery."
               </p>
             </div>
 
             <h2 className="font-serif text-xl md:text-2xl font-semibold text-[#1D2B22] uppercase tracking-wide pt-4 border-b border-[#3B4F43]/10 pb-2">
-              3. Why Reliable Logistics Matter for Hotels & Corporate Kitchens
+              3. Why Direct Delivery Matters for Hotels & Corporate Kitchens
             </h2>
             <p>
               For executive chefs, resort managers, and large-scale catering businesses in Dar es Salaam, raw ingredient consistency is crucial. Menu structures rely on constant portion sizes, clean packaging, and dependable delivery schedules.
             </p>
             <p>
-              ZEIDA serves as a key partner by removing the middleman. We operate our own fleet of custom-adapted delivery vehicles, delivering directly from our Kigamboni farm to corporate kitchens. This removes intermediate warehouse layovers, ensuring that our poultry and eggs arrive at maximum freshness and with complete safety tracking documentation.
+              ZEIDA serves as a key partner by removing the middleman. We do not outsource to third-party logistics; we operate our own fleet of custom-adapted farm vehicles under <strong>Habibu A Mbiduka</strong>, delivering directly from our Kigamboni farm to corporate kitchens. Our sales officers, <strong>Ellis</strong> and <strong>Ramadhani Hassan</strong>, ensure smooth client order coordination so every delivery arrives at peak freshness with complete safety tracking documentation.
             </p>
 
             {/* SEO Q&A Section */}
@@ -488,13 +488,13 @@ export default function ArticleDetail({ articleId, lang, onBack }: ArticleDetail
           <div className="mb-8">
             <div className="flex items-center gap-2 text-xs font-mono text-[#C4A66B] uppercase tracking-widest mb-3">
               <Leaf className="w-4 h-4" />
-              <span>Jamii: Usafirishaji na Ugavi wa Kilimo</span>
+              <span>Jamii: Mauzo, Utoaji na Operesheni za Shamba</span>
             </div>
             <h1 className="font-serif text-3xl md:text-5xl font-normal text-[#1D2B22] leading-tight mb-4">
-              Mlolongo Thabiti wa Thamani: Mfumo Wetu wa Kilimo Kilichokamilika
+              Mlolongo Thabiti wa Mauzo na Utoaji: Mfumo wa Usambazaji wa Moja kwa Moja
             </h1>
             <p className="text-lg text-[#3B4F43]/85 font-light leading-relaxed mb-6">
-              Uchambuzi wa kina wa jinsi mifumo ya kisasa ya usimamizi na usambazaji unavyopunguza upotevu wa bidhaa, na kuhakikisha upatikanaji wa uhakika wa bidhaa mbichi jijini Dar es Salaam.
+              Uchambuzi wa kina wa jinsi mifumo ya kisasa ya uzalishaji vifaranga, usimamizi na utoaji wa moja kwa moja unavyopunguza upotevu wa bidhaa na kuhakikisha upatikanaji wa uhakika jijini Dar es Salaam.
             </p>
             <div className="flex flex-wrap items-center gap-6 text-xs text-[#7A8C82] font-mono border-y border-[#3B4F43]/10 py-4">
               <div className="flex items-center gap-1.5">
@@ -503,10 +503,10 @@ export default function ArticleDetail({ articleId, lang, onBack }: ArticleDetail
               </div>
               <div className="flex items-center gap-1.5">
                 <Globe className="w-4 h-4 text-[#C4A66B]" />
-                <span>Tafiti ya Ugavi ya Kisayansi</span>
+                <span>Tafiti ya Mauzo na Utoaji</span>
               </div>
               <div>Imechapishwa: Juni 2026</div>
-              <div>Mwandishi: Mkuu wa Operesheni, Idara ya Usafirishaji ZEIDA</div>
+              <div>Mwandishi: Abdul Mohamed Shomari (Meneja Operesheni na Fedha) na Habibu A Mbiduka (Mkuu wa Mauzo na Utoaji)</div>
             </div>
           </div>
 
@@ -516,7 +516,7 @@ export default function ArticleDetail({ articleId, lang, onBack }: ArticleDetail
             <div className="relative z-10 text-center max-w-lg px-6">
               <span className="text-xs font-mono uppercase tracking-[0.2em] text-[#C4A66B] block mb-2">Mchoro wa Mtiririko wa Kazi</span>
               <p className="font-serif text-lg text-[#1D2B22] italic">
-                "Uandaji Ardhi → Usindikaji Lishe → Ufugaji Makini → Usindikaji Salama → Usafirishaji wa Kisasa"
+                "Uandaji Ardhi → Usindikaji Lishe → Uzalishaji Vifaranga → Ufugaji Makini → Utoaji wa Moja kwa Moja"
               </p>
             </div>
           </div>
@@ -524,55 +524,55 @@ export default function ArticleDetail({ articleId, lang, onBack }: ArticleDetail
           {/* Body Content */}
           <div className="prose prose-neutral max-w-none text-[#3B4F43] font-light text-[15px] md:text-base leading-[1.8] space-y-8">
             <p>
-              Moja ya changamoto kubwa katika kilimo cha Afrika Mashariki ni kuyumba kwa ugavi na upatikanaji wa bidhaa. Mifumo mingi ya zamani imegawanyika—kampuni moja inalima mazao, nyingine inatengeneza chakula, ya tatu inafuga, na ya nne inasafirisha. Kila hatua inaongeza gharama za kati, hatari ya magonjwa, na ucheleweshaji. ZEIDA imetatua hili kwa kuunda <strong>mlolongo thabiti na uliokamilika wa thamani.</strong>
+              Moja ya changamoto kubwa katika kilimo cha Afrika Mashariki ni kuyumba kwa ugavi na upatikanaji wa bidhaa. Mifumo mingi ya zamani imegawanyika—kampuni moja inalima mazao, nyingine inatengeneza chakula, ya tatu inafuga, na ya nne inasafirisha. Kila hatua inaongeza gharama za kati na ucheleweshaji. ZEIDA, chini ya usimamizi wa kifedha na kioperesheni wa <strong>Abdul Mohamed Shomari (Meneja Operesheni na Fedha)</strong>, imetatua hili kwa kuunda <strong>mlolongo thabiti na uliokamilika wa utoaji wa bidhaa.</strong>
             </p>
 
             <h2 className="font-serif text-xl md:text-2xl font-semibold text-[#1D2B22] uppercase tracking-wide pt-4 border-b border-[#3B4F43]/10 pb-2">
-              1. Faida za Mifumo ya Kilimo Kilichokamilika (IFS)
+              1. Faida za Kilimo Kilichokamilika na Uzalishaji Vifaranga
             </h2>
             <p>
               Mfumo uliokamilika wa kilimo unafanya kazi kama injini moja ya kibiolojia ambapo mabaki ya hatua moja yanakuwa malighafi ya hatua nyingine:
             </p>
             <ul className="list-disc pl-5 space-y-2">
               <li>
-                <strong>Matumizi ya Mabaki:</strong> Mbolea ya asili kutoka kwa mbuzi, kondoo, na kuku inakusanywa na kusindikwa. Mbolea hii yenye nitrojeni nyingi inarudishwa kwenye mashamba ya malisho na mahindi, na kuondoa kabisa hitaji la mbolea za kemikali.
+                <strong>Uzalishaji wa Vifaranga:</strong> Ukiongozwa moja kwa moja na <strong>Habibu Abdul Mbiduka (Mtaalamu wa Uzalishaji Vifaranga)</strong>, mtambo wetu wa kutotolesha unazalisha vifaranga bora na wenye afya imara kuanzia siku ya kwanza.
               </li>
               <li>
-                <strong>Ulinzi wa Bei:</strong> Kwa sababu tunalima mazao yetu wenyewe na kutengeneza chakula chetu shambani, hatuathiriwi na mabadiliko ya bei ya nafaka duniani. Hili linatuwezesha kudumisha bei thabiti na nafuu kwa wateja wetu wa Tanzania mwaka mzima.
+                <strong>Matumizi ya Mbolea za Asili:</strong> Mbolea ya asili kutoka kwa mbuzi, kondoo, na kuku inakusanywa na kusindikwa. Mbolea hii inarudishwa kwenye mashamba ya malisho na mahindi, na kuondoa kabisa mbolea za kemikali.
               </li>
               <li>
-                <strong>Usalama wa Kibiolojia:</strong> Kwa sababu wanyama wetu hawali vyakula vya nje visivyojulikana vyanzo vyake, tunajilinda dhidi ya magonjwa ya mifugo kwa asilimia kubwa sana.
+                <strong>Mkakati wa Mauzo na Bei:</strong> Ukiongozwa na maafisa mauzo <strong>Ellis</strong> na <strong>Ramadhani Hassan</strong>, mawasiliano yetu na wateja yanalinda bei zetu dhidi ya mabadiliko ya kiholela ya sokoni.
               </li>
             </ul>
 
             <h2 className="font-serif text-xl md:text-2xl font-semibold text-[#1D2B22] uppercase tracking-wide pt-4 border-b border-[#3B4F43]/10 pb-2">
-              2. Jinsi Mfumo Wetu Unavyozuia Upotevu wa Chakula
+              2. Jinsi Mfumo wa Utoaji Unavyozuia Upotevu wa Mazao
             </h2>
             <p>
-              Katika mifumo ya kawaida, hadi asilimia 30 ya mazao hupotea baada ya kuvunwa kutokana na uhifadhi mbovu au usafirishaji duni. Mfumo wetu unazuia hili kwa kuoanisha uzalishaji na mahitaji halisi ya soko:
+              Katika mifumo ya kawaida, hadi asilimia 30 ya mazao hupotea baada ya kuvunwa. Mfumo wetu wa utoaji wa moja kwa moja unazuia hili kwa kuoanisha uzalishaji na mahitaji halisi ya soko:
             </p>
             <p>
-              Katika shamba letu la Kisarawe II, mazao yanavunwa na kusindikwa kulingana na mahitaji halisi ya mifugo. Mayai yanayokusanywa kila siku yanasafishwa, kupangwa, na kupakiwa kwenye magari yetu ya usambazaji ndani ya saa chache tu. Mifugo inachinjwa na kuandaliwa kwa usafi wa hali ya juu kulingana na maagizo ya wateja wa jumla, na hivyo kuzuia kuhifadhi bidhaa kwa muda mrefu.
+              Katika shamba letu la Kisarawe II, mazao yanavunwa na kusindikwa kulingana na mahitaji ya mifugo. Mayai na kuku hufikishwa haraka sana kwa wateja chini ya uongozi wa <strong>Habibu A Mbiduka (Mkuu wa Mauzo na Utoaji)</strong>.
             </p>
 
             <div className="bg-[#FAF8F5] border-l-4 border-[#1A3D2B] p-6 rounded-r-xl my-6">
               <h3 className="font-serif font-semibold text-sm uppercase tracking-wider text-[#1D2B22] mb-2 flex items-center gap-2">
                 <CheckCircle className="w-4.5 h-4.5 text-[#1A3D2B]" />
-                Ufanisi wa Juu Bila Upotevu
+                Ufanisi wa Juu wa Utoaji
               </h3>
               <p className="text-xs md:text-sm italic leading-relaxed">
-                "Takwimu zetu zinaonyesha upotevu wa mazao baada ya kuvunwa ni chini ya asilimia 1.8, ikilinganishwa na wastani wa kanda yetu ambao ni asilimia 25. Hakuna takataka zinazotupwa—kila kitu kinarudishwa kwenye mzunguko wa uzalishaji."
+                "Takwimu zetu za utoaji wa bidhaa zinaonyesha upotevu wa mazao ni chini ya asilimia 1.8. Hatutegemei makampuni ya nje ya logistics—tunafanya utoaji wa moja kwa moja kutoka shambani kwa uaminifu wa hali ya juu."
               </p>
             </div>
 
             <h2 className="font-serif text-xl md:text-2xl font-semibold text-[#1D2B22] uppercase tracking-wide pt-4 border-b border-[#3B4F43]/10 pb-2">
-              3. Kwa Nini Usafirishaji wa Uhakika ni Muhimu kwa Hoteli na Migahawa ya Kisasa
+              3. Kwa Nini Utoaji wa Moja kwa Moja ni Muhimu kwa Hoteli na Migahawa
             </h2>
             <p>
-              Kwa wapishi wakuu wa hoteli, kambi za kitalii, na hoteli kubwa jijini Dar es Salaam, uaminifu wa upatikanaji wa bidhaa ni jambo muhimu sana. Ratiba za vyakula zinategemea vipimo thabiti, ufungashaji bora, na utoaji wa haraka.
+              Kwa wapishi wakuu wa hoteli na makampuni ya vyakula jijini Dar es Salaam, uaminifu wa upatikanaji wa bidhaa ni jambo muhimu sana. Ratiba za vyakula zinategemea vipimo thabiti na utoaji wa haraka.
             </p>
             <p>
-              ZEIDA inafanya kazi kama mshirika mkuu kwa kuondoa madalali wa kati. Tunaendesha magari yetu wenyewe ya usambazaji, tukisafirisha bidhaa moja kwa moja kutoka shamba la Kigamboni hadi jikoni kwako. Hili linaondoa uhifadhi wa muda mrefu kwenye maghala ya kati, likihakikisha kuku na mayai vinafika vikiwa vibichi kabisa na vikiwa na usalama kamili.
+              ZEIDA inafanya kazi kama mshirika mkuu kwa kuondoa madalali wa kati. Hatukodishi makampuni ya logistics ya nje; tunaendesha magari yetu wenyewe chini ya <strong>Habibu A Mbiduka</strong>, tukisafirisha na kutoa bidhaa moja kwa moja kutoka shamba la Kigamboni. Maafisa wetu wa mauzo, <strong>Ellis</strong> na <strong>Ramadhani Hassan</strong>, wanahakikisha kila oda inawafikia wateja ikiwa safi na yenye ubora wa juu.
             </p>
 
             {/* SEO Q&A Section */}
@@ -625,7 +625,7 @@ export default function ArticleDetail({ articleId, lang, onBack }: ArticleDetail
           <div className="mb-8">
             <div className="flex items-center gap-2 text-xs font-mono text-[#C4A66B] uppercase tracking-widest mb-3">
               <Leaf className="w-4 h-4" />
-              <span>Category: Ecological Agriculture</span>
+              <span>Category: Ecological Farming & Herd Health</span>
             </div>
             <h1 className="font-serif text-3xl md:text-5xl font-normal text-[#1D2B22] leading-tight mb-4">
               Controlled Sustainable Farming: Coastal Adaptation & Eco-Preservation
@@ -643,7 +643,7 @@ export default function ArticleDetail({ articleId, lang, onBack }: ArticleDetail
                 <span>Ecological Impact Certified</span>
               </div>
               <div>Published: June 2026</div>
-              <div>Author: Agronomist S. Mchome, Eco-Farming Advisor</div>
+              <div>Author: Dr. Ally (Doctor of the Farm), Salum Habibu (Head of Direct Operations) & Hashimu Chande Abdallah (CEO)</div>
             </div>
           </div>
 
@@ -759,7 +759,7 @@ export default function ArticleDetail({ articleId, lang, onBack }: ArticleDetail
           <div className="mb-8">
             <div className="flex items-center gap-2 text-xs font-mono text-[#C4A66B] uppercase tracking-widest mb-3">
               <Leaf className="w-4 h-4" />
-              <span>Jamii: Kilimo na Uhifadhi wa Mazingira</span>
+              <span>Jamii: Kilimo Endelevu na Afya ya Mifugo</span>
             </div>
             <h1 className="font-serif text-3xl md:text-5xl font-normal text-[#1D2B22] leading-tight mb-4">
               Kilimo Endelevu Kilichodhibitiwa: Kulinda Mazingira ya Pwani nchini Tanzania
@@ -777,7 +777,7 @@ export default function ArticleDetail({ articleId, lang, onBack }: ArticleDetail
                 <span>Uthibitisho wa Uhifadhi Mazingira</span>
               </div>
               <div>Imechapishwa: Juni 2026</div>
-              <div>Mwandishi: Mtaalamu S. Mchome, Mshauri wa Kilimo Endelevu</div>
+              <div>Mwandishi: Dkt. Ally (Daktari wa Shamba), Salum Habibu (Mkuu wa Operesheni za Shambani) na Hashimu Chande Abdallah (CEO)</div>
             </div>
           </div>
 

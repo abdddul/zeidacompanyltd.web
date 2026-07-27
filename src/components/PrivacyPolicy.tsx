@@ -58,7 +58,7 @@ export const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ isOpen, onClose, l
                 <p>Any information voluntarily provided is strictly used to:</p>
                 <ul className="list-disc pl-5 space-y-1">
                   <li>Process livestock inquiries, orders, and custom batch calculations.</li>
-                  <li>Coordinate farm visits or direct delivery logistics within Tanzania.</li>
+                  <li>Coordinate farm visits or direct delivery services within Tanzania.</li>
                   <li>Respond to customer support requests and agricultural consultation questions.</li>
                 </ul>
                 <p>We do <strong>NOT</strong> sell, rent, lease, or share your personal information with third-party marketers or external advertisers under any circumstances.</p>
